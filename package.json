@@ -1,0 +1,23 @@
+{
+  "name": "archives-app",
+  "version": "1.0.0",
+  "description": "An App for managing archives of whatever you feel like",
+  "main": "server.js",
+  "scripts": {
+    "client": "cd client && npm start",
+    "build:client": "cd client && npm run build",
+    "start": "node server.js",
+    "build:client:serve": "npm run build:client && npm run start",
+    "dev": "concurrently --kill-others-on-fail \"node server\" \"npm client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karthikjag/archives-app.git"
+  },
+  "author": "Karthik Jagannathan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/karthikjag/archives-app/issues"
+  },
+  "homepage": "https://github.com/karthikjag/archives-app#readme"
+}
