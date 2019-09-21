@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
-import Navbar from '../components/UI/Navbar';
+import Navbar from '../components/navigation/Navbar';
 // import Paper from '@material-ui/core/Paper';
 // import Typography from '@material-ui/core/Typography';
 // import Fab from '@material-ui/core/Fab';
