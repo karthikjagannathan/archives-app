@@ -1,15 +1,30 @@
 import React from 'react';
 import { CssBaseline } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/styles';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import theme from '../styles/theme';
+import HomePage from '../pages/Home';
+import Dashboard from '../pages/Dashboard';
 
-function App() {
+const AppSwitch = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <p>intializing...</p>
-    </ThemeProvider>
+    <Switch>
+      <Route exact path="/" component={HomePage} />
+      <Route exact path="/dashboard" component={Dashboard} />
+      <Route render={() => <Redirect to="/" />} />
+    </Switch>
   );
-}
+};
+
+const App = () => {
+  return (
+    <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <AppSwitch />
+      </ThemeProvider>
+    </BrowserRouter>
+  );
+};
 
 export default App;
