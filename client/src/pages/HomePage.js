@@ -5,7 +5,6 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
-import splashScreen from '../assets/catalogs.jpg';
 
 const styles = {
   root: {
@@ -36,7 +35,7 @@ const styles = {
   },
   splashScreen: {
     height: '100vh',
-    background: `url(${splashScreen})`,
+    background: `url(/static/images/catalogs.jpg)`,
     backgroundSize: 'auto auto',
     backgroundRepeat: 'no-repeat',
     backgroundAttachment: 'fixed',
@@ -65,7 +64,9 @@ const HomePage = () => {
                 <Typography variant="h1" component="h1">
                   ARCHIVES.
                 </Typography>
-                <Typography component="p">catalog.of.anything.</Typography>
+                <Typography component="p">
+                  catalog.of.[games.movies.books.music]
+                </Typography>
                 <Fab
                   color="primary"
                   aria-label="add"

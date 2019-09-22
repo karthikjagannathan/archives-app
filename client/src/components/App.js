@@ -3,7 +3,7 @@ import { CssBaseline } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/styles';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import theme from '../styles/theme';
-import HomePage from '../pages/Home';
+import HomePage from '../pages/HomePage';
 import Dashboard from '../pages/Dashboard';
 
 const AppSwitch = () => {
